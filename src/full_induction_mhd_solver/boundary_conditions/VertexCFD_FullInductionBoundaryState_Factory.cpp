@@ -1,0 +1,6 @@
+#include "utils/VertexCFD_Utils_ExplicitTemplateInstantiation.hpp"
+
+#include "full_induction_mhd_solver/boundary_conditions/VertexCFD_FullInductionBoundaryState_Factory.hpp"
+
+VERTEXCFD_INSTANTIATE_TEMPLATE_CLASS_EVAL_TRAITS_NUMSPACEDIM(
+    VertexCFD::BoundaryCondition::FullInductionBoundaryStateFactory)

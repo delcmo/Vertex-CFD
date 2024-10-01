@@ -1,0 +1,7 @@
+#include "utils/VertexCFD_Utils_ExplicitTemplateInstantiation.hpp"
+
+#include "VertexCFD_Closure_IncompressibleKOmegaDiffusivityCoefficient.hpp"
+#include "VertexCFD_Closure_IncompressibleKOmegaDiffusivityCoefficient_impl.hpp"
+
+VERTEXCFD_INSTANTIATE_TEMPLATE_CLASS_EVAL_TRAITS(
+    VertexCFD::ClosureModel::IncompressibleKOmegaDiffusivityCoefficient)

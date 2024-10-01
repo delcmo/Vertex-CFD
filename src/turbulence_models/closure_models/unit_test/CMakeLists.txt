@@ -1,0 +1,21 @@
+set(TEST_HARNESS_DIR ${CMAKE_SOURCE_DIR}/src/test_harness)
+include(${TEST_HARNESS_DIR}/TestHarness.cmake)
+
+VertexCFD_add_tests(
+  LIBS VertexCFD
+  NAMES
+  IncompressibleVariableConvectiveFlux
+  IncompressibleVariableDiffusionFlux
+  IncompressibleSpalartAllmarasDiffusivityCoefficient
+  IncompressibleSpalartAllmarasEddyViscosity
+  IncompressibleSpalartAllmarasSource
+  IncompressibleKEpsilonDiffusivityCoefficient
+  IncompressibleKEpsilonEddyViscosity
+  IncompressibleKEpsilonSource
+  IncompressibleKOmegaDiffusivityCoefficient
+  IncompressibleKOmegaEddyViscosity
+  IncompressibleKOmegaSource
+  IncompressibleRealizableKEpsilonEddyViscosity
+  IncompressibleRealizableKEpsilonSource
+  IncompressibleWALEEddyViscosity
+  )
